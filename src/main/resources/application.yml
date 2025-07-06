@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ssonexora
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  servlet:
+    context-path: /sso
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+jwt:
+  expiration-ms: 3600000
